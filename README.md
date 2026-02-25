@@ -7,3 +7,8 @@ Este proyecto consiste en la creación de una encuesta de satisfacción utilizan
 - .gitignore
 - README.md
 - editorconfig
+- index.html
+
+## Images Folder
+
+Lo usaremos para conseguir el favicon y las imágenes que usaremos en el componente
