@@ -32,8 +32,20 @@ main {
     max-width: var(--mobile-size);
 }
 
+h2 {
+    color: var(--white);
+    font-weight: var(--high-weight);
+}
+
+p {
+    color: var(--light-gray);
+    font-weight: var(--light-weight);
+}
+
 section.container,
 section.greetings-container {
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     border: 0.02rem solid var(--white);
     border-radius: 2rem;
@@ -43,22 +55,9 @@ section.greetings-container {
         var(--strong-dark-blue) 50%,
         var(--dark-blue) 100%
     );
-
-    h2 {
-        color: var(--white);
-        font-weight: var(--high-weight);
-    }
-
-    p {
-        color: var(--light-gray);
-        font-weight: var(--light-weight);
-    }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-
     .button-container {
         width: auto;
         background-color: transparent;
@@ -125,5 +124,26 @@ section.greetings-container {
 }
 
 .greetings-container {
-    display: none;
+    justify-content: center;
+    align-items: center;
+    p {
+        line-height: 1rem;
+    }
+    img {
+        width: 12rem;
+    }
+    div {
+        text-align: center;
+    }
+}
+
+.show-answer {
+    margin: 1rem;
+    background-color: var(--dark-blue);
+    border: 1px solid var(--strong-dark-blue);
+    border-radius: 2rem;
+    padding-inline: 1rem;
+    p {
+        color: var(--primary-color);
+    }
 }
