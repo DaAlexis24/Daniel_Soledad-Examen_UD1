@@ -1,0 +1,129 @@
+@import url(./main.css);
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --strong-dark-blue: hsl(216, 12%, 8%);
+
+    --font-primary: "Overpass", sans-serif;
+    --font-size: 15px;
+    --light-weight: 400;
+    --high-weight: 700;
+
+    --mobile-size: 375px;
+
+    --primary-color: var(--orange);
+    --bg-color: var(--strong-dark-blue);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    max-width: var(--mobile-size);
+}
+
+section.container,
+section.greetings-container {
+    padding: 2rem;
+    border: 0.02rem solid var(--white);
+    border-radius: 2rem;
+    background: var(--strong-dark-blue);
+    background: linear-gradient(
+        45deg,
+        var(--strong-dark-blue) 50%,
+        var(--dark-blue) 100%
+    );
+
+    h2 {
+        color: var(--white);
+        font-weight: var(--high-weight);
+    }
+
+    p {
+        color: var(--light-gray);
+        font-weight: var(--light-weight);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .button-container {
+        width: auto;
+        background-color: transparent;
+        align-items: center;
+        button {
+            background-color: var(--primary-color);
+            opacity: 50%;
+            color: var(--dark-blue);
+            font-size: large;
+            font-weight: var(--high-weight);
+            border: none;
+            border-radius: 2rem;
+            padding: 1rem 6rem;
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: var(--primary-color);
+            opacity: unset;
+        }
+    }
+}
+
+.container > div {
+    background: var(--dark-blue);
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid var(--strong-dark-blue);
+    border-radius: 3rem;
+}
+
+.choices-container {
+    display: flex;
+    margin-bottom: 1.5rem;
+    justify-content: space-around;
+    gap: 0.2rem;
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        padding: 1.5rem;
+        background-color: var(--dark-blue);
+        border: 1px solid var(--strong-dark-blue);
+        color: var(--light-gray);
+        border-radius: 50%;
+        font-size: large;
+        font-weight: var(--high-weight);
+        cursor: pointer;
+    }
+}
+
+.choices-container button:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-blue);
+}
+
+.choices-container button:active {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+.greetings-container {
+    display: none;
+}
