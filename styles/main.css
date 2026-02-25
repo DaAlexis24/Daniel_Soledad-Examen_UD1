@@ -74,7 +74,12 @@ section.greetings-container {
             cursor: pointer;
         }
 
-        button:active {
+        button:hover {
+            background-color: var(--primary-color);
+            opacity: unset;
+        }
+
+        button.active {
             background-color: var(--primary-color);
             opacity: unset;
         }
@@ -118,7 +123,7 @@ section.greetings-container {
     color: var(--dark-blue);
 }
 
-.choices-container button:active {
+.choices-container button.active {
     background-color: var(--white);
     color: var(--dark-blue);
 }
