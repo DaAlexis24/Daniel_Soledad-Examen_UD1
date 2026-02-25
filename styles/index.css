@@ -1,0 +1,25 @@
+@import url(./main.css);
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --strong-dark-blue: hsl(216, 12%, 8%);
+
+    --font-primary: "Overpass", sans-serif;
+    --font-size: 15px;
+    --light-weight: 400;
+    --high-weight: 700;
+
+    --mobile-size: 375px;
+
+    --primary-color: var(--orange);
+    --bg-color: var(--strong-dark-blue);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-primary);
+}
